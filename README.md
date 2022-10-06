@@ -176,7 +176,7 @@ Back to [top](#tableOfContents)
 
 ### Media <a name="media"></a>
 
-- []() - []() | copyright []()
+- [favicon.ico](https://icon-icons.com/es/icono/minecraft-logo/168974) - [icon-icons.com](https://icon-icons.com/) | copyright [VectorLogoZone](https://icon-icons.com/es/users/DmkIGLRdReSCIBJ7pItgP/icon-sets/)
 
 Back to [top](#tableOfContents)
 
