@@ -30,7 +30,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Run the project locally <a name="#runLocally"></a>
 
-  - Runs the app in the development mode.
+  - Runs the app in the development mode.\
     Open http://localhost:3000 to view it in the browser.
         
     ```
@@ -47,7 +47,7 @@ Back to [top](#tableOfContents)
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -55,7 +55,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm run build`
+#### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -65,7 +65,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
@@ -86,18 +86,13 @@ Back to [top](#tableOfContents)
     - Please see `.nvmrc` file at the root of `react-threejs-minecraft` repo.
     - Using nvm, a Node Version Manager is recommended as it helps you manage and switch between different Node versions with ease. It provides a command-line interface where you can install different versions with a single command, set a default, switch between them, etc.
 2. In GitHub click on the repository nammed [react-threejs-minecraft](https://github.com/sctlcd/react-threejs-minecraft)
-3. Along the top bar, find the “clone or download” button.
-4. Here you have the option to clone by HTTPS or SSH.
-5. Once you have chose your desired option, then click the copy icon next to the URL.
-6. In the terminal, ensure you are in the correct directory which you want to copy the code into. If not, change the directory.
-7. Run 
+3. Clone the repository locally. Run
 
     ````
       git clone https://github.com/sctlcd/react-threejs-minecraft.git
     ````
 
-8. Press the enter button and your clone will be created.
-9. Install all modules listed as dependencies in package.json
+4. Install all modules listed as dependencies in package.json
     
     ```
       cd react-threejs-minecraft
@@ -118,7 +113,7 @@ Back to [top](#tableOfContents)
     - [nanoid](https://www.npmjs.com/package/nanoid) - **Secure, URL-friendly, unique string ID generator for JavaScript**
     - [zustand](https://www.npmjs.com/package/zustand) - **State-management solution in React**
 
-10. Runs the app in the development mode.
+5. Runs the app in the development mode.
     Open http://localhost:3000 to view it in the browser.
         
     ```
@@ -136,15 +131,18 @@ Back to [top](#tableOfContents)
 
 1. Install Firebase CLI Tools, [firebase-tools](https://www.npmjs.com/package/firebase-tools)
 
-2. Create firebase.json and .firebaserc at the root of your project with the following content:
+  ```
+    npm install -g firebase-tools
+  ```
+
+2. Create `firebase.json` and `.firebaserc` at the root of your project with the following content:
 
     `firebase.json`:
 
     ```
-    json
     {
       "hosting": {
-        "public": "dist",
+        "public": "build",
         "ignore": [],
         "rewrites": [
           {
@@ -159,7 +157,6 @@ Back to [top](#tableOfContents)
     `.firebaserc`:
 
     ```
-    js
     {
       "projects": {
         "default": "<YOUR_FIREBASE_ID>"
@@ -169,8 +166,7 @@ Back to [top](#tableOfContents)
 
 3. After running `npm run build`, deploy using the command `firebase deploy`.
 
-
-=> live link: 
+=> live link: https://react-threejs-minecraft.web.app/
 
 Back to [top](#tableOfContents)
 
