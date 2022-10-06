@@ -28,6 +28,10 @@ Creating a Minecraft clone using React, Three.js, React Three Fiber, React Three
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Back to [top](#tableOfContents)
+
+---
+
 ## Run the project locally <a name="#runLocally"></a>
 
   - Runs the app in the development mode.\
