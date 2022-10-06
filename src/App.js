@@ -1,3 +1,4 @@
+import { Sky } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 
 import './App.css';
@@ -5,8 +6,9 @@ import './App.css';
 function App() {
   return (
     <>
-      <div>It's working!</div>
-      <Canvas></Canvas>
+      <Canvas>
+        <Sky />
+      </Canvas>
     </>
 
   );
