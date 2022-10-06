@@ -9,3 +9,8 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+// enable hot reload
+if (module.hot) {
+  module.hot.accept();
+}
