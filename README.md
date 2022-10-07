@@ -1,7 +1,7 @@
 # [react-threejs-minecraft](https://react-threejs-minecraft.web.app/)
 
 <br />
-<img src="https://github.com/sctlcd/react-threejs-minecraft/blob/main/design/react-threejs-minecraft-mockup-presentation.png" alt="react-threejs-minecraft" width="800">
+<!-- <img src="https://github.com/sctlcd/react-threejs-minecraft/blob/main/design/react-threejs-minecraft-mockup-presentation.png" alt="react-threejs-minecraft" width="800"> -->
 <br />
 
 ---
@@ -38,9 +38,9 @@ Back to [top](#tableOfContents)
     Open http://localhost:3000 to view it in the browser.
         
     ```
-      cd react-threejs-minecraft
-      npm i
-      npm start
+    cd react-threejs-minecraft
+    npm i
+    npm start
     ```
 
 Back to [top](#tableOfContents)
@@ -93,14 +93,14 @@ Back to [top](#tableOfContents)
 3. Clone the repository locally. Run
 
     ````
-      git clone https://github.com/sctlcd/react-threejs-minecraft.git
+    git clone https://github.com/sctlcd/react-threejs-minecraft.git
     ````
 
 4. Install all modules listed as dependencies in package.json
     
     ```
-      cd react-threejs-minecraft
-      npm i
+    cd react-threejs-minecraft
+    npm i
     ```
 
     note: in this app 
@@ -121,8 +121,8 @@ Back to [top](#tableOfContents)
     Open http://localhost:3000 to view it in the browser.
         
     ```
-      cd react-threejs-minecraft
-      npm start
+    cd react-threejs-minecraft
+    npm start
     ```
 
 Back to [top](#tableOfContents)
@@ -135,9 +135,9 @@ Back to [top](#tableOfContents)
 
 1. Install Firebase CLI Tools, [firebase-tools](https://www.npmjs.com/package/firebase-tools)
 
-  ```
+    ```
     npm install -g firebase-tools
-  ```
+    ```
 
 2. Create `firebase.json` and `.firebaserc` at the root of your project with the following content:
 
@@ -181,6 +181,7 @@ Back to [top](#tableOfContents)
 ### Media <a name="media"></a>
 
 - [favicon.ico](https://icon-icons.com/es/icono/minecraft-logo/168974) - [icon-icons.com](https://icon-icons.com/) | copyright [VectorLogoZone](https://icon-icons.com/es/users/DmkIGLRdReSCIBJ7pItgP/icon-sets/)
+- []() - []() | copyright []()
 
 Back to [top](#tableOfContents)
 
