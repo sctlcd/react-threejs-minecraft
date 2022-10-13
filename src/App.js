@@ -14,14 +14,14 @@ function App() {
           inclination={0}
           azimuth={0.25}
         /> {/* define Sky */}
-        <Cloud
+        {/* <Cloud
           args={[3, 2]}
           opacity={0.1}
           speed={0.4} // Rotation speed
           width={10} // Width of the full cloud
           depth={1.5} // Z-dir depth
           segments={400} // Number of particles
-        /> {/* define Cloud */}
+        /> define Cloud */}
       </Canvas>
     </>
 
