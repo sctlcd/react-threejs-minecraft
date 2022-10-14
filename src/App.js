@@ -22,6 +22,7 @@ function App() {
           depth={1.5} // Z-dir depth
           segments={400} // Number of particles
         /> define Cloud */}
+        <ambientLight intensity={0.5} />
       </Canvas>
     </>
 
