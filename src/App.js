@@ -5,6 +5,7 @@ import { Canvas } from '@react-three/fiber';
 // physics library 'cannon' - physics based hooks
 import { Physics } from '@react-three/cannon'; 
 import { Ground } from './components/Ground';
+import { Player } from './components/Player';
 
 import './App.css';
 
@@ -33,6 +34,7 @@ function App() {
         <ambientLight intensity={0.5} /> {/* define ambientLight */}
         <Physics> {/* create a physics world */}
           <Ground /> {/* define Ground */}
+          <Player /> {/* define Player */}
         </Physics>
       </Canvas>
     </>
