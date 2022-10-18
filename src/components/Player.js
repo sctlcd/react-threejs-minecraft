@@ -15,7 +15,7 @@ export const Player = () => {
   const [ref, api] = useSphere(() =>({
     mass: 1,
     type: 'Dynamic',
-    position:[0, 0, 0]
+    position:[4, 25, 0]
   }));
 
   // React useRef hook - persist values between renders, no re-render when updated.
@@ -37,7 +37,6 @@ export const Player = () => {
     // and other objects inside the  world.
     <mesh 
       ref={ref}
-      position={[0, 0, 0]}
     ></mesh>
   )
 };

@@ -13,7 +13,7 @@ export const Ground = () => {
   // we return an object that has props: position, rotation, mass (it will now be affected by gravity)
   const [ref] = usePlane(() => ({ 
     rotation: [-Math.PI / 2, 0, 0],
-    position: [0, -0.5, 0],
+    position: [0, 0, 0],
   }));
 
   groundTexture.repeat.set(100, 100); // how many times the texture is repeated across the surface, in each direction U and V
@@ -24,7 +24,6 @@ export const Ground = () => {
     // and other objects inside the  world.
     <mesh
       ref={ref}
-      rotation={[-Math.PI / 2, 0, 0]}
     >
       <planeBufferGeometry attach='geometry' args={[100, 100]} /> {/* define planeBufferGeometry */}
       <meshStandardMaterial attach='material' map={groundTexture} />  {/* define meshStandardMaterial */}

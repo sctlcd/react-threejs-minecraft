@@ -18,11 +18,11 @@ function App() {
         {/* Orbit controls allow the camera to orbit around a target. */}
         <OrbitControls zoomSpeed={0.5}/> {/* define Orbit controls*/}
         <Sky 
-          sunPosition={[100, 100, 20]}
-          // distance={450000}
-          // sunPosition={[8, 1, 8]}
-          // inclination={0}
-          // azimuth={0.25}
+          // sunPosition={[100, 100, 20]}
+          distance={450000}
+          sunPosition={[15, 2, 6]}
+          inclination={0}
+          azimuth={0.25}
         /> {/* define Sky */}
         {/* <Cloud
           args={[3, 2]}
