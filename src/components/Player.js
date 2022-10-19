@@ -16,25 +16,37 @@ export const Player = () => {
   const [ref, api] = useSphere(() =>({
     mass: 1,
     type: 'Dynamic',
-    position:[4, 20, 0]
+    position:[4, 1, 0]
   }));
 
   // React useRef hook - persist values between renders, no re-render when updated.
   // This position reference follows the sphere
-  const position = useRef([0, 0, 0]); // initiate the position
+  const pos = useRef([0, 0, 0]); // initiate the position
 
-  // React useEffect hook - 
+  // React useEffect hook
   // Subscribes to the api position changes of the sphere and runs on the first render and 
   // any time the sphere api position changes. (p being a triplet [x,x,x])
   useEffect(() => {
-    api.position.subscribe((p) => position.current = p)
+    api.position.subscribe((p) => pos.current = p)
   }, [api.position]);
+
+  // React useRef hook
+  // This velocity reference follows the sphere
+  const vel = useRef([0, 0, 0]); // initiate the velocity
+
+  // React useEffect hook
+  // Subscribes to the api velocity changes of the sphere and runs on the first render and 
+  // any time the sphere api velocity changes. (v being a triplet [x,x,x])
+  useEffect(() => {
+    api.velocity.subscribe((v) => vel.current = v)
+  }, [api.velocity]);
    
   // @react-three/fiber useFrame hook - execute code on every rendered frame - callback function 
   // will be invoked just before a frame is rendered
   // The camera follows the sphere via the position reference for every frames.
   useFrame(() => {
-    camera.position.copy(new Vector3(position.current[0], position.current[1], position.current[2]));
+    camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[2]));
+    api.velocity.set(0, 1, 0);
   });
 
   return (
