@@ -5,6 +5,7 @@ import { Canvas } from '@react-three/fiber';
 // physics library 'cannon' - physics based hooks
 import { Physics } from '@react-three/cannon'; 
 import { Ground } from './components/Ground';
+import { Player } from './components/Player';
 
 import './App.css';
 
@@ -17,8 +18,9 @@ function App() {
         {/* Orbit controls allow the camera to orbit around a target. */}
         <OrbitControls zoomSpeed={0.5}/> {/* define Orbit controls*/}
         <Sky 
+          // sunPosition={[100, 100, 20]}
           distance={450000}
-          sunPosition={[8, 1, 8]}
+          sunPosition={[15, 2, 6]}
           inclination={0}
           azimuth={0.25}
         /> {/* define Sky */}
@@ -32,6 +34,7 @@ function App() {
         /> define Cloud */}
         <ambientLight intensity={0.5} /> {/* define ambientLight */}
         <Physics> {/* create a physics world */}
+          <Player /> {/* define Player */}
           <Ground /> {/* define Ground */}
         </Physics>
       </Canvas>
