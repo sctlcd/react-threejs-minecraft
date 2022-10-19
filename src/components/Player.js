@@ -46,7 +46,7 @@ export const Player = () => {
   // The camera follows the sphere via the position reference for every frames.
   useFrame(() => {
     camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[2]));
-    api.velocity.set(0, 1, 0);
+    api.velocity.set(0, 1, 0); // set velocity
   });
 
   return (
