@@ -2,8 +2,12 @@ import { useFrame, useThree } from '@react-three/fiber';
 import { useSphere } from '@react-three/cannon';
 import { useRef, useEffect } from 'react';
 import { Vector3 } from '/node_modules/three/build/three.module.js'
+import { useKeyboard } from '../hooks/useKeyboard';
 
 export const Player = () => {
+  const actions = useKeyboard();
+  console.log('actions', Object.entries(actions).filter(([k, v]) => v));
+
   // @react-three/fiber useThree hook
   // give access to the state model which contains the default renderer, the scene, 
   // your camera, the current size of the canvas in screen and viewport coordinates
@@ -46,7 +50,7 @@ export const Player = () => {
   // The camera follows the sphere via the position reference for every frames.
   useFrame(() => {
     camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[2]));
-    api.velocity.set(0, 1, 0); // set velocity
+    api.velocity.set(0, 0, 0); // set velocity
   });
 
   return (
