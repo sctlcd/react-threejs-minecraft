@@ -54,7 +54,7 @@ export const Player = () => {
     camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[2]));
     // api.velocity.set(0, 0, 0); // set velocity
 
-    if (actions.jump) {
+    if (actions.jump && Math.abs(vel.current[1]) < 0.01) {
       api.velocity.set(vel.current[0], JUMP_FORCE, vel.current[2]);
     }
   });
