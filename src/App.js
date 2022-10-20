@@ -6,6 +6,7 @@ import { Canvas } from '@react-three/fiber';
 import { Physics } from '@react-three/cannon'; 
 import { Ground } from './components/Ground';
 import { Player } from './components/Player';
+import { FPV } from './components/FPV';
 
 import './App.css';
 
@@ -16,7 +17,7 @@ function App() {
       and renders our scene every frame (no need for traditional render-loop) */}
       <Canvas>
         {/* Orbit controls allow the camera to orbit around a target. */}
-        <OrbitControls zoomSpeed={0.5}/> {/* define Orbit controls*/}
+        {/* <OrbitControls zoomSpeed={0.5}/> define Orbit controls */}
         <Sky 
           // sunPosition={[100, 100, 20]}
           distance={450000}
@@ -33,6 +34,7 @@ function App() {
           segments={400} // Number of particles
         /> define Cloud */}
         <ambientLight intensity={0.5} /> {/* define ambientLight */}
+        <FPV />
         <Physics> {/* create a physics world */}
           <Player /> {/* define Player */}
           <Ground /> {/* define Ground */}
