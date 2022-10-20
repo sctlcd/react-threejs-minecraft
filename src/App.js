@@ -40,6 +40,7 @@ function App() {
           <Ground /> {/* define Ground */}
         </Physics>
       </Canvas>
+      <div className='absolute centered cursor'>+</div>
     </>
   );
 }
