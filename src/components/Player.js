@@ -5,6 +5,7 @@ import { Vector3 } from '/node_modules/three/build/three.module.js'
 import { useKeyboard } from '../hooks/useKeyboard';
 
 const JUMP_FORCE = 4;
+const SPEED = 4;
 
 export const Player = () => {
   const actions = useKeyboard();
@@ -51,8 +52,11 @@ export const Player = () => {
   // will be invoked just before a frame is rendered
   // The camera follows the sphere via the position reference for every frames.
   useFrame(() => {
-    camera.position.copy(new Vector3(pos.current[0], pos.current[1], pos.current[2]));
-    // api.velocity.set(0, 0, 0); // set velocity
+    camera.position.copy(new Vector3( 
+      pos.current[0], 
+      pos.current[1], 
+      pos.current[2]
+    ));
 
     const direction = new Vector3();
 
@@ -67,6 +71,13 @@ export const Player = () => {
       0,
       0
     );
+
+    direction.subVectors(frontVector, sideVector)
+      .normalize()
+      .multiplyScalar(SPEED) 
+      .applyEuler(camera.rotation);
+
+    api.velocity.set(direction.x, vel.current[1], direction.z)
 
     if (actions.jump && Math.abs(vel.current[1]) < 0.01) {
       api.velocity.set(vel.current[0], JUMP_FORCE, vel.current[2]);
