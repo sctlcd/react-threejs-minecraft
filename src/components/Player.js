@@ -8,8 +8,12 @@ const JUMP_FORCE = 4;
 const SPEED = 4;
 
 export const Player = () => {
-  const actions = useKeyboard();
-  // console.log('actions', Object.entries(actions).filter(([k, v]) => v));
+  const { moveBackward, 
+          moveForward, 
+          moveLeft,
+          moveRight,
+          jump 
+  } = useKeyboard();
 
   // @react-three/fiber useThree hook
   // give access to the state model which contains the default renderer, the scene, 
@@ -63,11 +67,11 @@ export const Player = () => {
     const frontVector = new Vector3(
       0,
       0,
-      (actions.moveBackward ? 1 : 0) - (actions.moveForward ? 1 : 0)
+      (moveBackward ? 1 : 0) - (moveForward ? 1 : 0)
     );
  
     const sideVector = new Vector3(
-      (actions.moveLeft ? 1 : 0) - (actions.moveRight ? 1 : 0),
+      (moveLeft ? 1 : 0) - (moveRight ? 1 : 0),
       0,
       0
     );
@@ -79,7 +83,7 @@ export const Player = () => {
 
     api.velocity.set(direction.x, vel.current[1], direction.z)
 
-    if (actions.jump && Math.abs(vel.current[1]) < 0.01) {
+    if (jump && Math.abs(vel.current[1]) < 0.01) {
       api.velocity.set(vel.current[0], JUMP_FORCE, vel.current[2]);
     }
   });
