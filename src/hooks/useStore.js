@@ -1,17 +1,18 @@
+// state management
 import create from 'zustand'
+// id generator
 import { nanoid } from 'nanoid'
 
-const getLocalStorage = (key) => JSON.parse(window.localStorage.getItem(key))
-const setLocalStorage = (key, value) => window.localStorage.setItem(key, JSON.stringify(value))
-
-
 export const useStore = create((set) => ({
+  // texture
   texture: 'dirt',
+  // array of cubes
   cubes: [{
     key: nanoid(),
     pos: [1, 1, 1],
     texture: 'dirt',
   }],
+  // methods to interact with the state 
   addCube: (x, y, z) => {
     set((prev) => ({
       cubes: [
