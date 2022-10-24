@@ -18,6 +18,12 @@ export const useStore = create((set) => ({
       pos: [ 2, 0.5, -4],
       texture: 'wood',
     }
+    ,
+    {
+      key: nanoid(),
+      pos: [ 4, 0.5, -5],
+      texture: 'glass',
+    }
   ],
   // methods to interact with the state 
   addCube: (x, y, z) => {
