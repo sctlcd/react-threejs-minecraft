@@ -9,7 +9,7 @@ export const useStore = create((set) => ({
   // array of cubes
   cubes: [{
     key: nanoid(),
-    pos: [1, 1, 1],
+    pos: [15, 0.5, 1],
     texture: 'dirt',
   }],
   // methods to interact with the state 
