@@ -7,6 +7,7 @@ import { Physics } from '@react-three/cannon';
 import { Ground } from './components/Ground';
 import { Player } from './components/Player';
 import { FPV } from './components/FPV';
+import { Cubes } from './components/Cubes';
 
 import './App.css';
 
@@ -37,6 +38,7 @@ function App() {
         <FPV />
         <Physics> {/* create a physics world */}
           <Player /> {/* define Player */}
+          <Cubes /> {/* define Cubes */}
           <Ground /> {/* define Ground */}
         </Physics>
       </Canvas>
