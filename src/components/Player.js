@@ -62,27 +62,33 @@ export const Player = () => {
       pos.current[2]
     ));
 
+    // Vector representing what direction we are facing
     const direction = new Vector3();
 
+    // Vector for the forwards and backwards speed
     const frontVector = new Vector3(
       0,
       0,
       (moveBackward ? 1 : 0) - (moveForward ? 1 : 0)
     );
- 
+  
+    // Vector for the left and right speed
     const sideVector = new Vector3(
       (moveLeft ? 1 : 0) - (moveRight ? 1 : 0),
       0,
       0
     );
 
+    // Make sure that the frontVector and sideVector are correct in relation to the camera 
     direction.subVectors(frontVector, sideVector)
       .normalize()
       .multiplyScalar(SPEED) 
       .applyEuler(camera.rotation);
 
-    api.velocity.set(direction.x, vel.current[1], direction.z)
+    // Set velocity with the direction vectors - apply to the sphere
+    api.velocity.set(direction.x, vel.current[1], direction.z);
 
+    // Jump movement
     if (jump && Math.abs(vel.current[1]) < 0.01) {
       api.velocity.set(vel.current[0], JUMP_FORCE, vel.current[2]);
     }
