@@ -17,8 +17,6 @@ function App() {
       {/* Canvas component: sets up a Scene and a Camera (basic building blocks necessary for rendering)
       and renders our scene every frame (no need for traditional render-loop) */}
       <Canvas>
-        {/* Orbit controls allow the camera to orbit around a target. */}
-        {/* <OrbitControls zoomSpeed={0.5}/> define Orbit controls */}
         <Sky 
           // sunPosition={[100, 100, 20]}
           distance={450000}
