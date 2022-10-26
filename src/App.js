@@ -1,5 +1,5 @@
 // useful helpers for react-three-fiber
-import { Sky, Cloud, OrbitControls } from '@react-three/drei';
+import { Sky, Cloud } from '@react-three/drei';
 // a React renderer for Three.js
 import { Canvas } from '@react-three/fiber';
 // physics library 'cannon' - physics based hooks

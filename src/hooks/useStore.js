@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid'
 
 export const useStore = create((set) => ({
   // texture
-  texture: 'dirt',
+  texture: 'log',
   // array of cubes
   cubes: [
     {
