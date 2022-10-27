@@ -11,7 +11,7 @@ export const Cube = ({ position, texture }) => {
   const [addCube, removeCube] = useStore((state) => [state.addCube, state.removeCube]);
 
   const activeTexture = textures[texture + 'Texture'];
-  console.log('activeTexture', activeTexture);
+  // console.log('activeTexture', activeTexture);
 
   return (
     <mesh 
@@ -21,27 +21,37 @@ export const Cube = ({ position, texture }) => {
       // a face is composed of 2 triangles which form a square
       // a cube has 6 faces = 6 squares = 12 triangl   es
       const clickedFace = Math.floor(e.faceIndex / 2);
-      console.log('clickedFace', clickedFace);
+      // console.log('clickedFace', clickedFace);
       
       const { x, y, z } = ref.current.position;
 
-      if (clickedFace === 0) {
+      if (e.altKey) {
+        removeCube(x, y, z);
+        return;
+      }
+      else if (clickedFace === 0) {
         addCube(x + 1, y, z);
+        return;
       }
-      if (clickedFace === 1) {
+      else if (clickedFace === 1) {
         addCube(x - 1, y, z);
+        return;
       }
-      if (clickedFace === 2) {
+      else if (clickedFace === 2) {
         addCube(x, y + 1, z);
+        return;
       }
-      if (clickedFace === 3) {
+      else if (clickedFace === 3) {
         addCube(x, y - 1, z);
+        return;
       }
-      if (clickedFace === 4) {
+      else if (clickedFace === 4) {
         addCube(x, y, z + 1);
+        return;
       }
-      if (clickedFace === 5) {
+      else if (clickedFace === 5) {
         addCube(x, y, z - 1);
+        return;
       }
     }}
     ref={ref}
