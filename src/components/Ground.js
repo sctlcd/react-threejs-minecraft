@@ -14,7 +14,7 @@ export const Ground = () => {
   // we return an object that has props: position, rotation, mass (it will now be affected by gravity)
   const [ref] = usePlane(() => ({ 
     rotation: [-Math.PI / 2, 0, 0],
-    position: [0, 0, 0],
+    position: [0, -0.5, 0],
   }));
 
   const [addCube] = useStore((state) => [state.addCube])
