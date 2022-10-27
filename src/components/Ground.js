@@ -1,5 +1,6 @@
 import { usePlane } from '@react-three/cannon';
 import { groundTexture } from '../assets/images/textures';
+import { useStore } from '../hooks/useStore';
 
 export const Ground = () => {
   // @react-three/cannon usePlane hook
@@ -13,8 +14,10 @@ export const Ground = () => {
   // we return an object that has props: position, rotation, mass (it will now be affected by gravity)
   const [ref] = usePlane(() => ({ 
     rotation: [-Math.PI / 2, 0, 0],
-    position: [0, 0, 0],
+    position: [0, -0.5, 0],
   }));
+
+  const [addCube] = useStore((state) => [state.addCube])
 
   groundTexture.repeat.set(100, 100); // how many times the texture is repeated across the surface, in each direction U and V
 
@@ -23,6 +26,11 @@ export const Ground = () => {
     // tie mesh to the reference you have just received. It will now be affected by gravity 
     // and other objects inside the  world.
     <mesh
+      onClick={(e) => {
+        e.stopPropagation();
+        const [x, y, z] = Object.values(e.point).map(val => Math.ceil(val));
+        addCube(x, y, z);
+      }}
       ref={ref}
     >
       <planeBufferGeometry attach='geometry' args={[100, 100]} /> {/* define planeBufferGeometry */}
