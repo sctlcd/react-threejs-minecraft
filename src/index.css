@@ -57,3 +57,11 @@ body {
 .cursor {
   color: yellow;
 }
+
+.texture-selector {
+  transform: scale(5);
+}
+
+.texture-selector img.active {
+  border: 0.5px solid yellow;
+}
