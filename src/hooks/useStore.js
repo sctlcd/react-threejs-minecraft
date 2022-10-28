@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid'
 
 export const useStore = create((set) => ({
   // texture
-  texture: 'log',
+  texture: 'dirt',
   // array of cubes
   cubes: [],
   // methods to interact with the state 
@@ -30,7 +30,12 @@ export const useStore = create((set) => ({
       })
     }));
   },
-  setTexture:() => {},
+  // set texture based on the incoming texture
+  setTexture: (texture) => {
+    set(() => ({
+      texture
+    }));
+  },
   saveWorld:() => {},
   resetWorld: () => {},
 }));
