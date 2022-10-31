@@ -59,7 +59,7 @@ body {
 }
 
 .texture-selector {
-  transform: scale(5);
+  transform: scale(3);
 }
 
 .texture-selector img.active {
