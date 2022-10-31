@@ -32,8 +32,7 @@ function App() {
           width={100} // Width of the full cloud
           depth={1.5} // Z-dir depth
           segments={300} // Number of particles
-        /> 
-        {/* define Cloud */}
+        /> {/* define Cloud */}
         <ambientLight intensity={0.5} /> {/* define ambientLight */}
         <FPV />
         <Physics> {/* create a physics world */}
