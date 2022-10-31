@@ -65,3 +65,8 @@ body {
 .texture-selector img.active {
   border: 0.5px solid yellow;
 }
+
+.menu {
+  top: 1rem;
+  left: 1rem;
+}
