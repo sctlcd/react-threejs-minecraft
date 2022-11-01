@@ -15,11 +15,11 @@
 3. [Available Scripts](#availableScripts)
 
 4. [Deployment](#deployment)
-	- [Deployment – Run locally](#deploymentRunLocallydeploymentRunLocally)
-	- [Deployment – Live website](#deploymentLiveWebsite)
+  - [Deployment – Run locally](#deploymentRunLocallydeploymentRunLocally)
+  - [Deployment – Live website](#deploymentLiveWebsite)
 
 5. [Credits](#credits)
-	- [Media](#media)
+  - [Media](#media)
 ---
 
 ## Introduction <a name="introduction"></a>
