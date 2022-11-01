@@ -63,7 +63,7 @@ body {
 }
 
 .texture-selector {
-  transform: scale(0.8);
+  transform: scale(1);
 }
 
 .texture-selector img.active {
@@ -72,9 +72,9 @@ body {
 
 .texture-selector {
   bottom: 0.5rem;
-  left: 0.1rem;
+  left: 0.5rem;
   display: flex;
-  width: 25%;
+  width: 15%;
 }
 
 .texture-selector img {
@@ -96,6 +96,7 @@ body {
   font-size: 1rem;
   color: #545454;
   background-color: #d2d2d2;
+  font-weight: bold;
 }
 
 .controls {
@@ -107,7 +108,7 @@ body {
   top: 3.5rem;
   left: 0.5rem;
   border: 0.125rem solid #545454;
-  font-size: 0.8rem;
+  font-size: 1rem;
   overflow: hidden;
   padding-bottom: 0.3rem;
 }
@@ -115,14 +116,14 @@ body {
 .controls .control {
   display: flex;
   justify-content: space-between;
-  margin: 0.3rem 1.5rem;
+  margin: 0.3rem 0.7rem;
 }
 
 .controls .control p {
   margin: 0;
 }
 
-.controls h3 {
+.controls h4 {
   margin: 0.4rem 0;
   text-align: center;
   text-decoration: underline;
@@ -138,7 +139,7 @@ body {
 }
 
 .controls.fixed-height {
-  height: 2.2rem !important;
+  height: 2.3rem !important;
 }
 
 .rotate {

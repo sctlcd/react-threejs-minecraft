@@ -32,7 +32,7 @@ export const Controls = () => {
 
   return (
     <div className={`absolute controls ${!show ? 'fixed-height' : ''}`}>
-      <h3>Controls</h3>
+      <h4>Controls</h4>
 
       {controls.map(control => (
         <div className="control" key={control.action}>
