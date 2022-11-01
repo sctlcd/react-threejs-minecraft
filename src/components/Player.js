@@ -4,14 +4,15 @@ import { useRef, useEffect } from 'react';
 import { Vector3 } from '/node_modules/three/build/three.module.js'
 import { useKeyboard } from '../hooks/useKeyboard';
 
-const JUMP_FORCE = 4;
-const SPEED = 4;
+const JUMP_FORCE = 5;
+const SPEED = 5;
 
 export const Player = () => {
   const { moveBackward, 
           moveForward, 
           moveLeft,
           moveRight,
+          shift,
           jump 
   } = useKeyboard();
 
@@ -80,9 +81,10 @@ export const Player = () => {
     );
 
     // Make sure that the frontVector and sideVector are correct in relation to the camera 
-    direction.subVectors(frontVector, sideVector)
+    direction
+      .subVectors(frontVector, sideVector)
       .normalize()
-      .multiplyScalar(SPEED) 
+      .multiplyScalar(SPEED + (shift ? 5 : 0))
       .applyEuler(camera.rotation);
 
     // Set velocity with the direction vectors - apply to the sphere

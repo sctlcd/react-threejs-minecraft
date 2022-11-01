@@ -10,6 +10,7 @@ import { FPV } from './components/FPV';
 import { Cubes } from './components/Cubes';
 import { TextureSelector } from './components/TextureSelector';
 import { Menu } from './components/Menu';
+import { Controls } from './components/Controls';
 
 import './App.css';
 
@@ -32,9 +33,7 @@ function App() {
           width={100} // Width of the full cloud
           depth={1.5} // Z-dir depth
           segments={300} // Number of particles
-        />
-        {/* define Cloud */}
-        {/* <Cloud position={[-4, 2, 0]} args={[3, 2]} /> */}
+        /> {/* define Cloud */}
         <ambientLight intensity={0.5} /> {/* define ambientLight */}
         <FPV />
         <Physics> {/* create a physics world */}
@@ -46,6 +45,7 @@ function App() {
       <div className='absolute centered cursor'>+</div>
       <TextureSelector />
       <Menu />
+      <Controls />
     </>
   );
 }
