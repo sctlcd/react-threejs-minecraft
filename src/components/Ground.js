@@ -1,5 +1,5 @@
 import { usePlane } from '@react-three/cannon';
-import { groundTexture } from '../assets/images/textures';
+import { groundTexture } from '../assets/js/textures';
 import { useStore } from '../hooks/useStore';
 
 export const Ground = () => {
@@ -12,7 +12,7 @@ export const Ground = () => {
   // Give it a mass.
   // get a ref to the physics box representation - use usePlane() then give it a callback, from this callback
   // we return an object that has props: position, rotation, mass (it will now be affected by gravity)
-  const [ref] = usePlane(() => ({ 
+  const [ref] = usePlane(() => ({
     rotation: [-Math.PI / 2, 0, 0],
     position: [0, -0.5, 0],
   }));
