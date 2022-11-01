@@ -59,9 +59,14 @@ body {
 }
 
 .texture-selector {
-  transform: scale(5);
+  transform: scale(3);
 }
 
 .texture-selector img.active {
   border: 0.5px solid yellow;
+}
+
+.menu {
+  top: 1rem;
+  left: 1rem;
 }

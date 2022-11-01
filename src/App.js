@@ -9,6 +9,7 @@ import { Player } from './components/Player';
 import { FPV } from './components/FPV';
 import { Cubes } from './components/Cubes';
 import { TextureSelector } from './components/TextureSelector';
+import { Menu } from './components/Menu';
 
 import './App.css';
 
@@ -19,9 +20,8 @@ function App() {
       and renders our scene every frame (no need for traditional render-loop) */}
       <Canvas>
         <Sky 
-          // sunPosition={[100, 100, 20]}
           distance={450000}
-          sunPosition={[15, 2, 6]}
+          sunPosition={[15, 2, 20]}
           inclination={0}
           azimuth={0.25}
         /> {/* define Sky */}
@@ -43,6 +43,7 @@ function App() {
       </Canvas>
       <div className='absolute centered cursor'>+</div>
       <TextureSelector />
+      <Menu />
     </>
   );
 }
