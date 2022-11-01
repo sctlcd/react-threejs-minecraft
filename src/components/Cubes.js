@@ -1,5 +1,5 @@
 import { useStore } from '../hooks/useStore';
-import { Cube } from '../components/Cube';
+import { Cube } from './Cube';
 
 export const Cubes = () => {
   const [cubes] = useStore((state) => [
