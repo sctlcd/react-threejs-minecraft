@@ -26,13 +26,15 @@ function App() {
           azimuth={0.25}
         /> {/* define Sky */}
         <Cloud
-          args={[10, 2]}
+          args={[10, 4]}
           opacity={0.3}
-          speed={0.4} // Rotation speed
+          speed={0.5} // Rotation speed
           width={100} // Width of the full cloud
           depth={1.5} // Z-dir depth
           segments={300} // Number of particles
-        /> {/* define Cloud */}
+        />
+        {/* define Cloud */}
+        {/* <Cloud position={[-4, 2, 0]} args={[3, 2]} /> */}
         <ambientLight intensity={0.5} /> {/* define ambientLight */}
         <FPV />
         <Physics> {/* create a physics world */}
