@@ -6,7 +6,7 @@ import {
   grassImg,
   glassImg,
   woodImg
-} from './images';
+} from '../js/images';
 
 const dirtTexture = new TextureLoader().load(dirtImg); {/* define dirtTexture and load dirtImg*/}
 const logTexture = new TextureLoader().load(logImg);
