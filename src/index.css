@@ -8,6 +8,7 @@
   --black: rgba(0, 0, 0, 1);
   --white: rgba(255, 255, 255, 1);
   --lightBlue-bg: rgba(105, 128, 157, 1);
+  --vt323: 'VT323', monospace;
 }
 
 html,
@@ -83,16 +84,63 @@ body {
 
 .menu {
   top: 1rem;
-  left: 1rem;
+  left: 0.5rem;
 }
 
 .menu button {
   padding: 0.25rem 0.5rem;
   margin-right: 0.75rem;
   border: 0.125rem solid #545454;
-  font-family: 'VT323', monospace;
+  font-family: var(--vt323);
   cursor: pointer;
-  font-size: 1.11rem;
+  font-size: 1rem;
   color: #545454;
   background-color: #d2d2d2;
+}
+
+.controls {
+  font-family: var(--vt323);
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: #d2d2d2;
+  top: 3.5rem;
+  left: 0.5rem;
+  border: 0.125rem solid #545454;
+  font-size: 0.8rem;
+  overflow: hidden;
+  padding-bottom: 0.3rem;
+}
+
+.controls .control {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.3rem 1.5rem;
+}
+
+.controls .control p {
+  margin: 0;
+}
+
+.controls h3 {
+  margin: 0.4rem 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.controls .toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.controls.fixed-height {
+  height: 2.2rem !important;
+}
+
+.rotate {
+  transform: rotate(-180deg);
 }
