@@ -9,7 +9,7 @@ const setLocalStorage = (key, value) => window.localStorage.setItem(key, JSON.st
 export const useStore = create((set) => ({
   // texture
   texture: 'dirt',
-  // array of cubes
+  // array of cubess
   cubes: getLocalStorage('cubes') || [],
   // methods to interact with the state 
   addCube: (x, y, z) => {
