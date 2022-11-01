@@ -52,7 +52,7 @@ export const TextureSelector = () => {
   }, [activeTexture]);
 
     return visible && (
-      <div className="absolute centered texture-selector">
+      <div className="absolute texture-selector">
         {Object.entries(images).map(([k, src]) => {
           return (<img 
             key={k}
