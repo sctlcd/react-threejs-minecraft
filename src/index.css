@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +7,7 @@
 :root {
   --black: rgba(0, 0, 0, 1);
   --white: rgba(255, 255, 255, 1);
-  --lightGrey-bg: rgba(185, 185, 185, 0.90);
+  --lightBlue-bg: rgba(105, 128, 157, 1);
 }
 
 html,
@@ -15,7 +17,7 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: var(--lightGrey-bg);
+  background-color: var(--lightBlue-bg);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -51,7 +53,8 @@ body {
 
 .centered {
   top: 50%;
-  left: 50%;transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .cursor {
@@ -59,14 +62,37 @@ body {
 }
 
 .texture-selector {
-  transform: scale(3);
+  transform: scale(0.8);
 }
 
 .texture-selector img.active {
-  border: 0.5px solid yellow;
+  border: 0.25rem solid yellow;
+}
+
+.texture-selector {
+  bottom: 0.5rem;
+  left: 0.1rem;
+  display: flex;
+  width: 25%;
+}
+
+.texture-selector img {
+  width: 20%;
+  border: 0.25rem solid transparent;
 }
 
 .menu {
   top: 1rem;
   left: 1rem;
+}
+
+.menu button {
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.75rem;
+  border: 0.125rem solid #545454;
+  font-family: 'VT323', monospace;
+  cursor: pointer;
+  font-size: 1.11rem;
+  color: #545454;
+  background-color: #d2d2d2;
 }
