@@ -22,11 +22,11 @@ export const Controls = () => {
     },
     {
       action: 'Remove Cube',
-      controls: 'Alt + LClick'
+      controls: 'Alt+LClick'
     },
     {
       action: 'Change Material',
-      controls: '1 - 5'
+      controls: '1-5'
     },
   ];
 
