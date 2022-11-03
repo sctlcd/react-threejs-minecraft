@@ -177,7 +177,7 @@ body {
 @media only screen and (max-width: 992px){
   .controls {
     font-size: 0.8rem;
-    width: 27%;
+    width: 25%;
   }
 
   .controls .toggle {

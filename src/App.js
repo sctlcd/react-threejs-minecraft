@@ -12,8 +12,6 @@ import { TextureSelector } from './components/TextureSelector';
 import { Menu } from './components/Menu';
 import { Controls } from './components/Controls';
 
-import './App.css';
-
 function App() {
   return (
     <>
