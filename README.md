@@ -1,7 +1,7 @@
 # [react-threejs-minecraft](https://react-threejs-minecraft.web.app/)
 
 <br />
-<!-- <img src="https://github.com/sctlcd/react-threejs-minecraft/blob/main/design/react-threejs-minecraft-mockup-presentation.png" alt="react-threejs-minecraft" width="800"> -->
+<img src="https://github.com/sctlcd/react-threejs-minecraft/blob/main/design/react-threejs-minecraft-preview.png" alt="react-threejs-minecraft" width="800">
 <br />
 
 ---
