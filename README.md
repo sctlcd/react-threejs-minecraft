@@ -24,7 +24,7 @@
 
 ## Introduction <a name="introduction"></a>
 
-Creating a Minecraft clone using React, Three.js, React Three Fiber, React Three Drei, React Three Cannon.
+Creating a desktop Minecraft clone using React, Three.js, React Three Fiber, React Three Drei, React Three Cannon.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
