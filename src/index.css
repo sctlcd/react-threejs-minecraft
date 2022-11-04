@@ -154,6 +154,10 @@ body {
   .controls.fixed-height {
     height: 2.4rem;
   }
+
+  .menu button {
+    font-size: 1rem;
+  }
 }
 
 
@@ -172,12 +176,17 @@ body {
   .controls.fixed-height {
     height: 2.3rem;
   }
+
+  .menu button {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 992px){
   .controls {
     font-size: 0.8rem;
     width: 25%;
+    top: 3.3rem;
   }
 
   .controls .toggle {
@@ -189,12 +198,17 @@ body {
   .controls.fixed-height {
     height: 2.1rem;
   }
+
+  .menu button {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 600px){
   .controls {
     font-size: 0.7rem;
     width: 30%;
+    top: 3.3rem;
   }
 
   .controls .toggle {
@@ -206,12 +220,17 @@ body {
   .controls.fixed-height {
     height: 2rem;
   }
+
+  .menu button {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 470px){
   .controls {
     font-size: 0.6rem;
     width: 37%;
+    top: 3.3rem;
   }
 
   .controls .toggle {
@@ -222,5 +241,9 @@ body {
 
   .controls.fixed-height {
     height: 1.9rem;
+  }
+
+  .menu button {
+    font-size: 0.8rem;
   }
 }
