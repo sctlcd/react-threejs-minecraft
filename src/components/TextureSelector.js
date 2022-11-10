@@ -11,7 +11,7 @@ import {
   lavaImg,
   sandImg,
   stoneImg,
-  // waterImg
+  waterImg
 } from '../assets/js/images';
 
 const images = {
@@ -24,7 +24,7 @@ const images = {
   lava: lavaImg,
   sand: sandImg,
   stone: stoneImg,
-  // water: waterImg
+  water: waterImg
 };
 
 export const TextureSelector = () => {
@@ -39,7 +39,8 @@ export const TextureSelector = () => {
     brik,
     lava,
     sand,
-    stone
+    stone,
+    water
   } = useKeyboard();
 
   // if setTexture, dirt, grass, glass, wood, log change the pressedTexture is set to the texture
@@ -53,7 +54,8 @@ export const TextureSelector = () => {
       brik,
       lava,
       sand,
-      stone
+      stone, 
+      water
     }; 
 
     // if any of the textures are true then the texture will be the pressed texture
@@ -62,7 +64,7 @@ export const TextureSelector = () => {
     if (pressedTexture) {
       setTexture(pressedTexture[0]);
     }
-  }, [setTexture, dirt, grass, glass, wood, log, brik, lava, sand, stone]);
+  }, [setTexture, dirt, grass, glass, wood, log, brik, lava, sand, stone, water]);
 
   // if activeTexture changes we want to have this texture selector visible for 2s then we want it to disappear
   useEffect(() => {
