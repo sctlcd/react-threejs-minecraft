@@ -1,7 +1,18 @@
 import { useEffect, useState } from 'react';
 import { useStore } from '../hooks/useStore';
 import { useKeyboard } from '../hooks/useKeyboard';
-import { dirtImg, grassImg, glassImg, woodImg, logImg } from '../assets/js/images';
+import {
+  dirtImg, 
+  grassImg, 
+  glassImg, 
+  woodImg, 
+  logImg,
+  brikImg,
+  lavaImg,
+  sandImg,
+  stoneImg,
+  waterImg
+} from '../assets/js/images';
 
 const images = {
   dirt: dirtImg,
@@ -9,6 +20,11 @@ const images = {
   glass: glassImg,
   wood: woodImg,
   log: logImg,
+  brik: brikImg,
+  lava: lavaImg,
+  sand: sandImg,
+  stone: stoneImg,
+  water: waterImg
 };
 
 export const TextureSelector = () => {
@@ -19,7 +35,12 @@ export const TextureSelector = () => {
     grass,
     glass,
     wood,
-    log
+    log,
+    brik,
+    lava,
+    sand,
+    stone,
+    water
   } = useKeyboard();
 
   // if setTexture, dirt, grass, glass, wood, log change the pressedTexture is set to the texture
@@ -29,7 +50,12 @@ export const TextureSelector = () => {
       grass,
       glass,
       wood,
-      log
+      log,
+      brik,
+      lava,
+      sand,
+      stone, 
+      water
     }; 
 
     // if any of the textures are true then the texture will be the pressed texture
@@ -38,7 +64,7 @@ export const TextureSelector = () => {
     if (pressedTexture) {
       setTexture(pressedTexture[0]);
     }
-  }, [setTexture, dirt, grass, glass, wood, log]);
+  }, [setTexture, dirt, grass, glass, wood, log, brik, lava, sand, stone, water]);
 
   // if activeTexture changes we want to have this texture selector visible for 2s then we want it to disappear
   useEffect(() => {
