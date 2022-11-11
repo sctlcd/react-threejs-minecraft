@@ -108,7 +108,6 @@ Back to [top](#tableOfContents)
     - [react-three/cannon]() - **Physics based hooks for react-three-fiber**
     - [react-three/drei]() - **Useful add-ons for react-three-fiber**
     - [react-three/fiber](https://www.npmjs.com/package/@react-three/fiber) - **React renderer for threejs**
-    
     - [react](https://reactjs.org/) - **JavaScript library for creating user interfaces**
     - [react-dom](https://www.npmjs.com/package/react-dom) - **Package that serves as the entry point to the DOM and server renderers for React**
     - [react-merge-refs](https://www.npmjs.com/package/react-merge-refs) - **React utility to merge refs**
@@ -181,7 +180,16 @@ Back to [top](#tableOfContents)
 ### Media <a name="media"></a>
 
 - [favicon.ico](https://icon-icons.com/es/icono/minecraft-logo/168974) - [icon-icons.com](https://icon-icons.com/) | copyright [VectorLogoZone](https://icon-icons.com/es/users/DmkIGLRdReSCIBJ7pItgP/icon-sets/)
-- []() - []() | copyright []()
+- [grass.jpg](https://www.pinterest.es/pin/165366617558676650/) - [Pinterest](https://www.pinterest.com/) | copyright unknown
+- [log-min.png](https://www.pinterest.es/pin/70579919152155507/) - [Pinterest](https://www.pinterest.com/) | copyright unknown
+- [lava-min.jpg](https://www.pinterest.es/pin/1000080660979107301/) - [Pinterest](https://www.pinterest.com/) | copyright unknown
+- [stone-min.jpg](https://www.pinterest.es/pin/658299670560983343/) - [Pinterest](https://www.pinterest.com/) | copyright unknown
+- [dirt-min.jpg](https://www.pinterest.es/pin/660762576588605286/) - [Pinterest](https://www.pinterest.com/) | copyright unknown
+- [sand-min.jpg](https://www.pinterest.es/pin/36802921950249846/) - [Pinterest](https://www.pinterest.com/) | copyright unknown
+- [wood-min.jpg](https://www.pinterest.es/pin/607071224788643154/) - [Pinterest](https://www.pinterest.com/) | copyright unknown
+- [brik-min.jpg](https://www.pinterest.es/pin/598345500510418674/) - [Pinterest](https://www.pinterest.com/) | copyright unknown
+- [glass-min.jpg](https://www.pinterest.es/pin/323062973281697849/) - [Pinterest](https://www.pinterest.com/) | copyright unknown
+- [water-min.jpg](https://www.pinterest.es/pin/2251868554956350/) - [Pinterest](https://www.pinterest.com/) | copyright unknown
 
 Back to [top](#tableOfContents)
 
