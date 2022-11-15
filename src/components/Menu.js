@@ -5,12 +5,13 @@ export const Menu = () => {
 
   return (
     <div className="menu absolute">
-      {/* <button
+      <button
         onClick={(e) => {
           e.stopPropagation();
           saveWorld();
+          window.location.reload();
         }}
-      >Save</button> */}
+      >Save</button>
       <button
         onClick={(e) => {
           e.stopPropagation();
