@@ -89,7 +89,7 @@ body {
 
 .menu button {
   padding: 0.25rem 0.5rem;
-  margin-right: 0.75rem;
+  margin-right: 0.3rem;
   border: 0.125rem solid #545454;
   font-family: var(--vt323);
   cursor: pointer;
