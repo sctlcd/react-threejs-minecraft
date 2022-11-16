@@ -1,7 +1,10 @@
 import { useStore } from "../hooks/useStore";
 
 export const Menu = () => {
-  const [saveWorld, resetWorld] = useStore((state) => [state.saveWorld, state.resetWorld]);
+  const [saveWorld, resetWorld] = useStore((state) => [
+    state.saveWorld,
+    state.resetWorld,
+  ]);
 
   return (
     <div className="menu absolute">
@@ -11,13 +14,17 @@ export const Menu = () => {
           saveWorld();
           window.location.reload();
         }}
-      >Save</button>
+      >
+        Save
+      </button>
       <button
         onClick={(e) => {
           e.stopPropagation();
           resetWorld();
         }}
-      >Reset</button>
+      >
+        Reset
+      </button>
     </div>
   );
 };

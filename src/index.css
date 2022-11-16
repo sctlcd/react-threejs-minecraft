@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@
   --black: rgba(0, 0, 0, 1);
   --white: rgba(255, 255, 255, 1);
   --lightBlue-bg: rgba(105, 128, 157, 1);
-  --vt323: 'VT323', monospace;
+  --vt323: "VT323", monospace;
 }
 
 html,
@@ -32,7 +32,8 @@ body {
   position: fixed;
   overflow: hidden;
   overscroll-behavior-y: none;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   color: var(--black);
 }
 
@@ -144,7 +145,7 @@ body {
 
 /************************************************* Media queries */
 
-@media only screen and (min-width: 1201px){
+@media only screen and (min-width: 1201px) {
   .controls {
     font-size: 1rem;
     width: 18%;
@@ -171,8 +172,7 @@ body {
   }
 }
 
-
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
   .controls {
     font-size: 0.9rem;
     width: 20%;
@@ -199,7 +199,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
   .controls {
     font-size: 0.8rem;
     width: 25%;
@@ -227,7 +227,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .controls {
     font-size: 0.7rem;
     width: 30%;
@@ -255,7 +255,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 470px) {
   .controls {
     font-size: 0.6rem;
     width: 37%;

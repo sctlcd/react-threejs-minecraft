@@ -15,11 +15,14 @@
 3. [Available Scripts](#availableScripts)
 
 4. [Deployment](#deployment)
-  - [Deployment – Run locally](#deploymentRunLocallydeploymentRunLocally)
-  - [Deployment – Live website](#deploymentLiveWebsite)
+
+- [Deployment – Run locally](#deploymentRunLocallydeploymentRunLocally)
+- [Deployment – Live website](#deploymentLiveWebsite)
 
 5. [Credits](#credits)
-  - [Media](#media)
+
+- [Media](#media)
+
 ---
 
 ## Introduction <a name="introduction"></a>
@@ -30,16 +33,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Controls**
 
-| Action      | Controls    |
-| ----------- | ----------- |
-| Movements | W/S/D/A |
-| Sprint | LShift |
-| Jump | Space |
-| Add Cube | LClick |
-| Remove Cube | Alt+LClick |
-| Change Material | 1-0 |
+| Action          | Controls   |
+| --------------- | ---------- |
+| Movements       | W/S/D/A    |
+| Sprint          | LShift     |
+| Jump            | Space      |
+| Add Cube        | LClick     |
+| Remove Cube     | Alt+LClick |
+| Change Material | 1-0        |
 
-*note*: For better accuracy, when clicking to lock the cursor to the mouse, click as close as you can to the cursor. That aligns the camera center and mouse. Any offset between clicked position and center of viewport is not handled in this tutorial.
+_note_: For better accuracy, when clicking to lock the cursor to the mouse, click as close as you can to the cursor. That aligns the camera center and mouse. Any offset between clicked position and center of viewport is not handled in this tutorial.
 
 Back to [top](#tableOfContents)
 
@@ -47,14 +50,13 @@ Back to [top](#tableOfContents)
 
 ## Run the project locally <a name="#runLocally"></a>
 
-  - Runs the app in the development mode.\
-    Open http://localhost:3000 to view it in the browser.
-        
-    ```
-    cd react-threejs-minecraft
-    npm i
-    npm start
-    ```
+- Runs the app in the development mode.\
+  Open http://localhost:3000 to view it in the browser.
+  ```
+  cd react-threejs-minecraft
+  npm i
+  npm start
+  ```
 
 Back to [top](#tableOfContents)
 
@@ -95,47 +97,49 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 Back to [top](#tableOfContents)
 
 ---
+
 ## Deployment <a name="#deployment"></a>
+
 ### Deployment – Run locally <a name="#deploymentRunLocally"></a>
 
-1. Prerequisite:  
-    - Make sure [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) are installed on your computer. You can download both at nodejs.org (NPM is included in your Node installation).
-    - Please see `.nvmrc` file at the root of `react-threejs-minecraft` repo.
-    - Using nvm, a Node Version Manager is recommended as it helps you manage and switch between different Node versions with ease. It provides a command-line interface where you can install different versions with a single command, set a default, switch between them, etc.
+1. Prerequisite:
+   - Make sure [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) are installed on your computer. You can download both at nodejs.org (NPM is included in your Node installation).
+   - Please see `.nvmrc` file at the root of `react-threejs-minecraft` repo.
+   - Using nvm, a Node Version Manager is recommended as it helps you manage and switch between different Node versions with ease. It provides a command-line interface where you can install different versions with a single command, set a default, switch between them, etc.
 2. In GitHub click on the repository nammed [react-threejs-minecraft](https://github.com/sctlcd/react-threejs-minecraft)
 3. Clone the repository locally. Run
 
-    ````
-    git clone https://github.com/sctlcd/react-threejs-minecraft.git
-    ````
+   ```
+   git clone https://github.com/sctlcd/react-threejs-minecraft.git
+   ```
 
 4. Install all modules listed as dependencies in package.json
-    
-    ```
-    cd react-threejs-minecraft
-    npm i
-    ```
 
-    note: in this app 
-    - [three](https://www.npmjs.com/package/three) - **JavaScript 3D library**
-    - [react-three/cannon]() - **Physics based hooks for react-three-fiber**
-    - [react-three/drei]() - **Useful add-ons for react-three-fiber**
-    - [react-three/fiber](https://www.npmjs.com/package/@react-three/fiber) - **React renderer for threejs**
-    - [react](https://reactjs.org/) - **JavaScript library for creating user interfaces**
-    - [react-dom](https://www.npmjs.com/package/react-dom) - **Package that serves as the entry point to the DOM and server renderers for React**
-    - [react-merge-refs](https://www.npmjs.com/package/react-merge-refs) - **React utility to merge refs**
-    - [react-scripts](https://www.npmjs.com/package/react-scripts) - **Configuration and scripts for Create React App**
-    - [react-spring](https://www.npmjs.com/package/react-spring) - **Cross-platform spring-physics first animation library**
-    - [nanoid](https://www.npmjs.com/package/nanoid) - **Secure, URL-friendly, unique string ID generator for JavaScript**
-    - [zustand](https://www.npmjs.com/package/zustand) - **State-management solution in React**
+   ```
+   cd react-threejs-minecraft
+   npm i
+   ```
+
+   note: in this app
+
+   - [three](https://www.npmjs.com/package/three) - **JavaScript 3D library**
+   - [react-three/cannon]() - **Physics based hooks for react-three-fiber**
+   - [react-three/drei]() - **Useful add-ons for react-three-fiber**
+   - [react-three/fiber](https://www.npmjs.com/package/@react-three/fiber) - **React renderer for threejs**
+   - [react](https://reactjs.org/) - **JavaScript library for creating user interfaces**
+   - [react-dom](https://www.npmjs.com/package/react-dom) - **Package that serves as the entry point to the DOM and server renderers for React**
+   - [react-merge-refs](https://www.npmjs.com/package/react-merge-refs) - **React utility to merge refs**
+   - [react-scripts](https://www.npmjs.com/package/react-scripts) - **Configuration and scripts for Create React App**
+   - [react-spring](https://www.npmjs.com/package/react-spring) - **Cross-platform spring-physics first animation library**
+   - [nanoid](https://www.npmjs.com/package/nanoid) - **Secure, URL-friendly, unique string ID generator for JavaScript**
+   - [zustand](https://www.npmjs.com/package/zustand) - **State-management solution in React**
 
 5. Runs the app in the development mode.
-    Open http://localhost:3000 to view it in the browser.
-        
-    ```
-    cd react-threejs-minecraft
-    npm start
-    ```
+   Open http://localhost:3000 to view it in the browser.
+   ```
+   cd react-threejs-minecraft
+   npm start
+   ```
 
 Back to [top](#tableOfContents)
 
@@ -147,38 +151,38 @@ Back to [top](#tableOfContents)
 
 1. Install Firebase CLI Tools, [firebase-tools](https://www.npmjs.com/package/firebase-tools)
 
-    ```
-    npm install -g firebase-tools
-    ```
+   ```
+   npm install -g firebase-tools
+   ```
 
 2. Create `firebase.json` and `.firebaserc` at the root of your project with the following content:
 
-    `firebase.json`:
+   `firebase.json`:
 
-    ```
-    {
-      "hosting": {
-        "public": "build",
-        "ignore": [],
-        "rewrites": [
-          {
-            "source": "**",
-            "destination": "/index.html"
-          }
-        ]
-      }
-    }
-    ```
+   ```
+   {
+     "hosting": {
+       "public": "build",
+       "ignore": [],
+       "rewrites": [
+         {
+           "source": "**",
+           "destination": "/index.html"
+         }
+       ]
+     }
+   }
+   ```
 
-    `.firebaserc`:
+   `.firebaserc`:
 
-    ```
-    {
-      "projects": {
-        "default": "<YOUR_FIREBASE_ID>"
-      }
-    }
-    ```
+   ```
+   {
+     "projects": {
+       "default": "<YOUR_FIREBASE_ID>"
+     }
+   }
+   ```
 
 3. After running `npm run build`, deploy using the command `firebase deploy`.
 
