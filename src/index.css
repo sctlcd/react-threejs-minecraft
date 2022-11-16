@@ -133,6 +133,11 @@ body {
   transition: 0.3s ease;
 }
 
+.controls .info-icon {
+  position: absolute;
+  cursor: pointer;
+}
+
 .rotate {
   transform: rotate(-180deg);
 }
@@ -146,9 +151,15 @@ body {
   }
 
   .controls .toggle {
-    right: 2rem;
+    left: 2rem;
     font-size: 0.9rem;
     top: 0.5rem;
+  }
+
+  .controls .info-icon {
+    right: 2rem;
+    font-size: 0.9rem;
+    top: 0.6rem;
   }
 
   .controls.fixed-height {
@@ -168,9 +179,15 @@ body {
   }
 
   .controls .toggle {
-    right: 2rem;
+    left: 2rem;
     font-size: 0.8rem;
     top: 0.5rem;
+  }
+
+  .controls .info-icon {
+    right: 2rem;
+    font-size: 0.8rem;
+    top: 0.6rem;
   }
 
   .controls.fixed-height {
@@ -190,9 +207,15 @@ body {
   }
 
   .controls .toggle {
-    right: 1.6rem;
+    left: 1.6rem;
     font-size: 0.8rem;
     top: 0.4rem;
+  }
+
+  .controls .info-icon {
+    right: 1.6rem;
+    font-size: 0.8rem;
+    top: 0.5rem;
   }
 
   .controls.fixed-height {
@@ -212,9 +235,15 @@ body {
   }
 
   .controls .toggle {
-    right: 1rem;
+    left: 1rem;
     font-size: 0.7rem;
     top: 0.4rem;
+  }
+
+  .controls .info-icon {
+    right: 1rem;
+    font-size: 0.7rem;
+    top: 0.5rem;
   }
 
   .controls.fixed-height {
@@ -234,9 +263,15 @@ body {
   }
 
   .controls .toggle {
-    right: 0.9rem;
+    left: 0.9rem;
     font-size: 0.6rem;
     top: 0.4rem;
+  }
+
+  .controls .info-icon {
+    right: 0.9rem;
+    font-size: 0.6rem;
+    top: 0.5rem;
   }
 
   .controls.fixed-height {

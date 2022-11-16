@@ -24,9 +24,22 @@
 
 ## Introduction <a name="introduction"></a>
 
-Creating a desktop Minecraft clone using React, Three.js, React Three Fiber, React Three Drei, React Three Cannon.
+Creating a desktop Minecraft clone using [React](https://reactjs.org/), [Three.js](https://threejs.org/), [React Three Fiber](https://github.com/pmndrs/react-three-fiber), [React Three Drei](https://github.com/pmndrs/drei), [React Three Cannon](https://github.com/pmndrs/use-cannon).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+**Controls**
+
+| Action      | Controls    |
+| ----------- | ----------- |
+| Movements | W/S/D/A |
+| Sprint | LShift |
+| Jump | Space |
+| Add Cube | LClick |
+| Remove Cube | Alt+LClick |
+| Change Material | 1-0 |
+
+*note*: For better accuracy, when clicking to lock the cursor to the mouse, click as close as you can to the cursor. That aligns the camera center and mouse. Any offset between clicked position and center of viewport is not handled in this tutorial.
 
 Back to [top](#tableOfContents)
 
