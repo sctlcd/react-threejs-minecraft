@@ -4,7 +4,7 @@ import { useStore } from "../hooks/useStore";
 
 export const Ground = () => {
   // @react-three/cannon usePlane hook
-  // usePlane is physics-only, it comes from the physics library 'cannon'.
+  // usePlane is physics-only, it comes from the physics library "cannon".
   // It approximates a shape and links it to arbitrary geometry. The physics
   // engine now manages a literal box, a plane, and subjects it to gravity and other.
   // Pick a shape that suits your objects contact surface, it could be a box, plane, sphere, etc.

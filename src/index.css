@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=VT323&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,11 +7,14 @@
 :root {
   --black: rgba(0, 0, 0, 1);
   --white: rgba(255, 255, 255, 1);
+  --offWhite: rgba(242, 242, 242, 1);
   --lightBlue-bg: rgba(105, 128, 157, 1);
   --yellow: rgb(255, 255, 0);
   --grey: rgba(84, 84, 84, 1);
+  --grey-bg: rgba(50, 50, 50, 0.8);
   --lightGrey-bg: rgba(210, 210, 210, 1);
   --vt323: "VT323", monospace;
+  --audiowide: "Audiowide", cursive;
 }
 
 html,
@@ -145,6 +148,12 @@ body {
   transform: rotate(-180deg);
 }
 
+#tooltip.customTheme {
+  color: var(--offWhite);
+  background-color: var(--grey-bg);
+  font-family: var(--audiowide);
+}
+
 /************************************************* Media queries */
 
 @media only screen and (min-width: 1201px) {
@@ -171,6 +180,10 @@ body {
   }
 
   .menu button {
+    font-size: 1rem;
+  }
+
+  #tooltip.customTheme {
     font-size: 1rem;
   }
 }
@@ -201,6 +214,10 @@ body {
   .menu button {
     font-size: 1rem;
   }
+
+  #tooltip.customTheme {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -227,6 +244,10 @@ body {
   }
 
   .menu button {
+    font-size: 0.8rem;
+  }
+
+  #tooltip.customTheme {
     font-size: 0.8rem;
   }
 }
@@ -257,6 +278,10 @@ body {
   .menu button {
     font-size: 0.7rem;
   }
+
+  #tooltip.customTheme {
+    font-size: 0.7rem;
+  }
 }
 
 @media only screen and (max-width: 470px) {
@@ -283,6 +308,10 @@ body {
   }
 
   .menu button {
+    font-size: 0.6rem;
+  }
+
+  #tooltip.customTheme {
     font-size: 0.6rem;
   }
 }

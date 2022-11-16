@@ -41,11 +41,16 @@ export const Controls = () => {
         data-tip
         data-for="tooltip"
       />
-      <ReactTooltip id="tooltip" place="right" type="dark" effect="float">
+      <ReactTooltip
+        id="tooltip"
+        place="right"
+        effect="float"
+        className="customTheme"
+      >
         <span>
           For better accuracy, when clicking to lock the cursor to the mouse,
           click as close as you can to the cursor. That aligns the camera center
-          and mouse.
+          and the mouse.
         </span>
       </ReactTooltip>
       <h4>Controls</h4>

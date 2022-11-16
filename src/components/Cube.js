@@ -33,7 +33,7 @@ export const Cube = ({ position, texture }) => {
         // a face is composed of 2 triangles which form a square
         // a cube has 6 faces = 6 squares = 12 triangles
         const clickedFace = Math.floor(e.faceIndex / 2);
-        // console.log('clickedFace', clickedFace);
+        // console.log("clickedFace", clickedFace);
 
         const { x, y, z } = ref.current.position;
 

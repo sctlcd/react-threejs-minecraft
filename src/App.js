@@ -2,7 +2,7 @@
 import { Sky, Cloud } from "@react-three/drei";
 // a React renderer for Three.js
 import { Canvas } from "@react-three/fiber";
-// physics library 'cannon' - physics based hooks
+// physics library "cannon" - physics based hooks
 import { Physics } from "@react-three/cannon";
 import { Ground } from "./components/Ground";
 import { Player } from "./components/Player";

@@ -42,7 +42,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 |   Remove Cube   | Alt+LClick |
 | Change Material |    1-0     |
 
-_note_: For better accuracy, when clicking to lock the cursor to the mouse, click as close as you can to the cursor. That aligns the camera center and mouse. Any offset between clicked position and center of viewport is not handled in this tutorial.
+_note_: For better accuracy, when clicking to lock the cursor to the mouse, click as close as you can to the cursor. That aligns the camera center and the mouse. Any offset between clicked position and center of viewport is not handled in this app version.
 
 Back to [top](#tableOfContents)
 
