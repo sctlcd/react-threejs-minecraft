@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,10 @@
   --black: rgba(0, 0, 0, 1);
   --white: rgba(255, 255, 255, 1);
   --lightBlue-bg: rgba(105, 128, 157, 1);
-  --vt323: 'VT323', monospace;
+  --yellow: rgb(255, 255, 0);
+  --grey: rgba(84, 84, 84, 1);
+  --lightGrey-bg: rgba(210, 210, 210, 1);
+  --vt323: "VT323", monospace;
 }
 
 html,
@@ -32,7 +35,8 @@ body {
   position: fixed;
   overflow: hidden;
   overscroll-behavior-y: none;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   color: var(--black);
 }
 
@@ -59,7 +63,7 @@ body {
 }
 
 .cursor {
-  color: yellow;
+  color: var(--yellow);
 }
 
 .texture-selector {
@@ -67,7 +71,7 @@ body {
 }
 
 .texture-selector img.active {
-  border: 0.25rem solid yellow;
+  border: 0.1rem solid var(--yellow);
 }
 
 .texture-selector {
@@ -90,11 +94,11 @@ body {
 .menu button {
   padding: 0.25rem 0.5rem;
   margin-right: 0.3rem;
-  border: 0.125rem solid #545454;
+  border: 0.125rem solid var(--grey);
   font-family: var(--vt323);
   cursor: pointer;
-  color: #545454;
-  background-color: #d2d2d2;
+  color: var(--grey);
+  background-color: var(--lightGrey-bg);
   font-weight: bold;
 }
 
@@ -102,12 +106,13 @@ body {
   font-family: var(--vt323);
   display: flex;
   flex-direction: column;
-  background-color: #d2d2d2;
+  background-color: var(--lightGrey-bg);
   top: 3.5rem;
   left: 0.5rem;
-  border: 0.125rem solid #545454;
+  border: 0.125rem solid var(--grey);
   overflow: hidden;
   padding-bottom: 0.3rem;
+  color: var(--grey);
 }
 
 .controls .control {
@@ -132,22 +137,33 @@ body {
   transition: 0.3s ease;
 }
 
+.controls .info-icon {
+  position: absolute;
+  cursor: pointer;
+}
+
 .rotate {
   transform: rotate(-180deg);
 }
 
 /************************************************* Media queries */
 
-@media only screen and (min-width: 1201px){
+@media only screen and (min-width: 1201px) {
   .controls {
     font-size: 1rem;
     width: 18%;
   }
 
   .controls .toggle {
-    right: 2rem;
+    left: 2rem;
     font-size: 0.9rem;
     top: 0.5rem;
+  }
+
+  .controls .info-icon {
+    right: 1.6rem;
+    font-size: 0.9rem;
+    top: 0.6rem;
   }
 
   .controls.fixed-height {
@@ -159,17 +175,22 @@ body {
   }
 }
 
-
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
   .controls {
     font-size: 0.9rem;
     width: 20%;
   }
 
   .controls .toggle {
-    right: 2rem;
+    left: 2rem;
     font-size: 0.8rem;
     top: 0.5rem;
+  }
+
+  .controls .info-icon {
+    right: 1.5rem;
+    font-size: 0.8rem;
+    top: 0.6rem;
   }
 
   .controls.fixed-height {
@@ -181,7 +202,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
   .controls {
     font-size: 0.8rem;
     width: 25%;
@@ -189,9 +210,15 @@ body {
   }
 
   .controls .toggle {
-    right: 1.6rem;
+    left: 1.6rem;
     font-size: 0.8rem;
     top: 0.4rem;
+  }
+
+  .controls .info-icon {
+    right: 1.4rem;
+    font-size: 0.8rem;
+    top: 0.5rem;
   }
 
   .controls.fixed-height {
@@ -203,7 +230,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .controls {
     font-size: 0.7rem;
     width: 30%;
@@ -211,9 +238,15 @@ body {
   }
 
   .controls .toggle {
-    right: 1rem;
+    left: 1rem;
     font-size: 0.7rem;
     top: 0.4rem;
+  }
+
+  .controls .info-icon {
+    right: 1rem;
+    font-size: 0.7rem;
+    top: 0.5rem;
   }
 
   .controls.fixed-height {
@@ -225,7 +258,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 470px) {
   .controls {
     font-size: 0.6rem;
     width: 37%;
@@ -233,9 +266,15 @@ body {
   }
 
   .controls .toggle {
-    right: 0.9rem;
+    left: 0.9rem;
     font-size: 0.6rem;
     top: 0.4rem;
+  }
+
+  .controls .info-icon {
+    right: 0.9rem;
+    font-size: 0.6rem;
+    top: 0.5rem;
   }
 
   .controls.fixed-height {

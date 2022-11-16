@@ -1,16 +1,16 @@
 // useful helpers for react-three-fiber
-import { Sky, Cloud } from '@react-three/drei';
+import { Sky, Cloud } from "@react-three/drei";
 // a React renderer for Three.js
-import { Canvas } from '@react-three/fiber';
+import { Canvas } from "@react-three/fiber";
 // physics library 'cannon' - physics based hooks
-import { Physics } from '@react-three/cannon'; 
-import { Ground } from './components/Ground';
-import { Player } from './components/Player';
-import { FPV } from './components/FPV';
-import { Cubes } from './components/Cubes';
-import { TextureSelector } from './components/TextureSelector';
-import { Menu } from './components/Menu';
-import { Controls } from './components/Controls';
+import { Physics } from "@react-three/cannon";
+import { Ground } from "./components/Ground";
+import { Player } from "./components/Player";
+import { FPV } from "./components/FPV";
+import { Cubes } from "./components/Cubes";
+import { TextureSelector } from "./components/TextureSelector";
+import { Menu } from "./components/Menu";
+import { Controls } from "./components/Controls";
 
 function App() {
   return (
@@ -18,12 +18,14 @@ function App() {
       {/* Canvas component: sets up a Scene and a Camera (basic building blocks necessary for rendering)
       and renders our scene every frame (no need for traditional render-loop) */}
       <Canvas>
-        <Sky 
+        {/* define Sky */}
+        <Sky
           distance={450000}
           sunPosition={[15, 2, 20]}
           inclination={0}
           azimuth={0.25}
-        /> {/* define Sky */}
+        />{" "}
+        {/* define Cloud */}
         <Cloud
           args={[10, 4]}
           opacity={0.3}
@@ -31,16 +33,19 @@ function App() {
           width={100} // Width of the full cloud
           depth={1.5} // Z-dir depth
           segments={300} // Number of particles
-        /> {/* define Cloud */}
-        <ambientLight intensity={0.5} /> {/* define ambientLight */}
+        />{" "}
+        {/* define ambientLight */}
+        <ambientLight intensity={0.5} />
+        {/* define First Person View */}
         <FPV />
-        <Physics> {/* create a physics world */}
-          <Player /> {/* define Player */}
-          <Cubes /> {/* define Cubes */}
-          <Ground /> {/* define Ground */}
+        {/* create a physics world */}
+        <Physics>
+          <Player />
+          <Cubes />
+          <Ground />
         </Physics>
       </Canvas>
-      <div className='absolute centered cursor'>+</div>
+      <div className="absolute centered cursor">+</div>
       <TextureSelector />
       <Menu />
       <Controls />

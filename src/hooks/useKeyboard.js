@@ -2,22 +2,22 @@ import { useCallback, useEffect, useState } from "react";
 
 function actionByKey(key) {
   const keyActionMap = {
-    KeyW: 'moveForward',
-    KeyS: 'moveBackward',
-    KeyA: 'moveLeft',
-    KeyD: 'moveRight',
-    ShiftLeft: 'shift',
-    Space: 'jump',
-    Digit1: 'dirt',
-    Digit2: 'grass',
-    Digit3: 'glass',
-    Digit4: 'wood',
-    Digit5: 'log',
-    Digit6: 'brik',
-    Digit7: 'lava',
-    Digit8: 'sand',
-    Digit9: 'stone',
-    Digit0: 'water',
+    KeyW: "moveForward",
+    KeyS: "moveBackward",
+    KeyA: "moveLeft",
+    KeyD: "moveRight",
+    ShiftLeft: "shift",
+    Space: "jump",
+    Digit1: "dirt",
+    Digit2: "grass",
+    Digit3: "glass",
+    Digit4: "wood",
+    Digit5: "log",
+    Digit6: "brik",
+    Digit7: "lava",
+    Digit8: "sand",
+    Digit9: "stone",
+    Digit0: "water",
   };
   return keyActionMap[key];
 }
@@ -39,41 +39,41 @@ export const useKeyboard = () => {
     lava: false,
     sand: false,
     stone: false,
-    water: false
+    water: false,
   });
 
   const handleKeyDown = useCallback((e) => {
     const action = actionByKey(e.code);
     if (action) {
       setActions((prev) => {
-        return ({
+        return {
           ...prev,
-          [action]: true
-        });
+          [action]: true,
+        };
       });
     }
   }, []);
 
   const handleKeyUp = useCallback((e) => {
-    const action = actionByKey(e.code)
+    const action = actionByKey(e.code);
     if (action) {
       setActions((prev) => {
-        return ({
+        return {
           ...prev,
-          [action]: false
-        });
+          [action]: false,
+        };
       });
     }
   }, []);
 
   useEffect(() => {
-    document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('keyup', handleKeyUp);
+    document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("keyup", handleKeyUp);
     return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-      document.removeEventListener('keyup', handleKeyUp);
-    }
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("keyup", handleKeyUp);
+    };
   }, [handleKeyDown, handleKeyUp]);
 
   return actions;
-} 
+};
