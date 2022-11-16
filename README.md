@@ -16,12 +16,12 @@
 
 4. [Deployment](#deployment)
 
-- [Deployment – Run locally](#deploymentRunLocallydeploymentRunLocally)
-- [Deployment – Live website](#deploymentLiveWebsite)
+   - [Deployment – Run locally](#deploymentRunLocallydeploymentRunLocally)
+   - [Deployment – Live website](#deploymentLiveWebsite)
 
 5. [Credits](#credits)
 
-- [Media](#media)
+   - [Media](#media)
 
 ---
 
@@ -33,14 +33,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Controls**
 
-| Action          | Controls   |
-| --------------- | ---------- |
-| Movements       | W/S/D/A    |
-| Sprint          | LShift     |
-| Jump            | Space      |
-| Add Cube        | LClick     |
-| Remove Cube     | Alt+LClick |
-| Change Material | 1-0        |
+|     Action      |  Controls  |
+| :-------------: | :--------: |
+|    Movements    |  W/S/D/A   |
+|     Sprint      |   LShift   |
+|      Jump       |   Space    |
+|    Add Cube     |   LClick   |
+|   Remove Cube   | Alt+LClick |
+| Change Material |    1-0     |
 
 _note_: For better accuracy, when clicking to lock the cursor to the mouse, click as close as you can to the cursor. That aligns the camera center and mouse. Any offset between clicked position and center of viewport is not handled in this tutorial.
 
