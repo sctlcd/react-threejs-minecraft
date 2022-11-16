@@ -93,7 +93,7 @@ body {
 
 .menu button {
   padding: 0.25rem 0.5rem;
-  margin-right: 0.3rem;
+  margin-right: 0.2rem;
   border: 0.125rem solid var(--grey);
   font-family: var(--vt323);
   cursor: pointer;
@@ -107,7 +107,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--lightGrey-bg);
-  top: 3.5rem;
   left: 0.5rem;
   border: 0.125rem solid var(--grey);
   overflow: hidden;
@@ -152,22 +151,23 @@ body {
   .controls {
     font-size: 1rem;
     width: 18%;
+    top: 3rem;
   }
 
   .controls .toggle {
     left: 2rem;
     font-size: 0.9rem;
-    top: 0.5rem;
+    top: 0.4rem;
   }
 
   .controls .info-icon {
     right: 1.6rem;
-    font-size: 0.9rem;
-    top: 0.6rem;
+    font-size: 0.8rem;
+    top: 0.5rem;
   }
 
   .controls.fixed-height {
-    height: 2.4rem;
+    height: 2.1rem;
   }
 
   .menu button {
@@ -179,22 +179,23 @@ body {
   .controls {
     font-size: 0.9rem;
     width: 20%;
+    top: 3rem;
   }
 
   .controls .toggle {
     left: 2rem;
     font-size: 0.8rem;
-    top: 0.5rem;
+    top: 0.4rem;
   }
 
   .controls .info-icon {
     right: 1.5rem;
-    font-size: 0.8rem;
-    top: 0.6rem;
+    font-size: 0.7rem;
+    top: 0.5rem;
   }
 
   .controls.fixed-height {
-    height: 2.3rem;
+    height: 2rem;
   }
 
   .menu button {
@@ -206,23 +207,23 @@ body {
   .controls {
     font-size: 0.8rem;
     width: 25%;
-    top: 3.3rem;
+    top: 2.8rem;
   }
 
   .controls .toggle {
     left: 1.6rem;
     font-size: 0.8rem;
-    top: 0.4rem;
+    top: 0.3rem;
   }
 
   .controls .info-icon {
     right: 1.4rem;
-    font-size: 0.8rem;
-    top: 0.5rem;
+    font-size: 0.7rem;
+    top: 0.4rem;
   }
 
   .controls.fixed-height {
-    height: 2.1rem;
+    height: 1.9rem;
   }
 
   .menu button {
@@ -234,27 +235,27 @@ body {
   .controls {
     font-size: 0.7rem;
     width: 30%;
-    top: 3.3rem;
+    top: 2.7rem;
   }
 
   .controls .toggle {
     left: 1rem;
     font-size: 0.7rem;
-    top: 0.4rem;
+    top: 0.3rem;
   }
 
   .controls .info-icon {
     right: 1rem;
-    font-size: 0.7rem;
-    top: 0.5rem;
+    font-size: 0.6rem;
+    top: 0.4rem;
   }
 
   .controls.fixed-height {
-    height: 2rem;
+    height: 1.8rem;
   }
 
   .menu button {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -262,26 +263,26 @@ body {
   .controls {
     font-size: 0.6rem;
     width: 37%;
-    top: 3.3rem;
+    top: 2.6rem;
   }
 
   .controls .toggle {
     left: 0.9rem;
     font-size: 0.6rem;
-    top: 0.4rem;
+    top: 0.3rem;
   }
 
   .controls .info-icon {
     right: 0.9rem;
-    font-size: 0.6rem;
-    top: 0.5rem;
+    font-size: 0.5rem;
+    top: 0.4rem;
   }
 
   .controls.fixed-height {
-    height: 1.9rem;
+    height: 1.7rem;
   }
 
   .menu button {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
