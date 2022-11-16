@@ -108,6 +108,7 @@ body {
   border: 0.125rem solid #545454;
   overflow: hidden;
   padding-bottom: 0.3rem;
+  color: #545454;
 }
 
 .controls .control {
