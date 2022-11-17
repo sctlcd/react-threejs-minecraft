@@ -133,6 +133,11 @@ Back to [top](#tableOfContents)
    - [react-spring](https://www.npmjs.com/package/react-spring) - **Cross-platform spring-physics first animation library**
    - [nanoid](https://www.npmjs.com/package/nanoid) - **Secure, URL-friendly, unique string ID generator for JavaScript**
    - [zustand](https://www.npmjs.com/package/zustand) - **State-management solution in React**
+   - [react-tooltip](https://www.npmjs.com/package/react-tooltip) - **react-tooltip**
+   - [babel-plugin-macros](https://www.npmjs.com/package/babel-plugin-macros) - **Allows you to build simple compile-time libraries**
+   - [@fortawesome/react-fontawesome](https://www.npmjs.com/package/@fortawesome/react-fontawesome) - **Font Awesome React component**
+   - [@fortawesome/free-solid-svg-icons](https://www.npmjs.com/package/@fortawesome/free-solid-svg-icons) - **The SVG, font, and CSS toolkit**
+   - [@fortawesome/fontawesome-svg-core](https://www.npmjs.com/package/@fortawesome/fontawesome-svg-core) - **The SVG, font, and CSS toolkit**
 
 5. Runs the app in the development mode.
    Open http://localhost:3000 to view it in the browser.
