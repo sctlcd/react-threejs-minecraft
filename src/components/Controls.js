@@ -33,8 +33,18 @@ export const Controls = () => {
     },
   ];
 
+  const handleClick = () => {
+    return false;
+  };
+
   return (
-    <div className={`absolute controls ${!show ? "fixed-height" : ""}`}>
+    <div
+      className={`absolute controls ${!show ? "fixed-height" : ""}`}
+      onClick={(e) => {
+        e.stopPropagation();
+        handleClick();
+      }}
+    >
       <FontAwesomeIcon
         icon={icon({ name: "circle-info", style: "solid" })}
         className="info-icon"
