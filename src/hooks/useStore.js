@@ -12,6 +12,7 @@ export const useStore = create((set) => ({
   texture: getLocalStorage("texture") || "dirt",
   // array of cubess
   cubes: getLocalStorage("cubes") || [],
+
   // methods to interact with the state
   addCube: (x, y, z) => {
     set((prev) => ({

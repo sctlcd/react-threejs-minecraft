@@ -3,6 +3,10 @@ import * as textures from "../assets/js/textures";
 import { useStore } from "../hooks/useStore";
 import { useState } from "react";
 
+const white = "white";
+const lightGrey = "#d4d4d4";
+const glass = "glass";
+
 export const Cube = ({ position, texture }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [ref] = useBox(() => ({
@@ -33,7 +37,6 @@ export const Cube = ({ position, texture }) => {
         // a face is composed of 2 triangles which form a square
         // a cube has 6 faces = 6 squares = 12 triangles
         const clickedFace = Math.floor(e.faceIndex / 2);
-        console.log("clickedFace", clickedFace);
 
         const { x, y, z } = ref.current.position;
 
@@ -74,10 +77,10 @@ export const Cube = ({ position, texture }) => {
     >
       <boxBufferGeometry attach="geometry" />
       <meshStandardMaterial
-        color={isHovered ? "#d4d4d4" : "white"}
+        color={isHovered ? lightGrey : white}
         map={activeTexture}
         transparent={true}
-        opacity={texture === "glass" ? 0.6 : 1}
+        opacity={texture === glass ? 0.6 : 1}
         attach="material"
       />
     </mesh>
