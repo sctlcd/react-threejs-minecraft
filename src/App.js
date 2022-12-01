@@ -29,7 +29,7 @@ function App() {
         <Cloud
           args={[10, 4]}
           opacity={0.3}
-          speed={0.5} // Rotation speed
+          speed={0.3} // Rotation speed
           width={100} // Width of the full cloud
           depth={1.5} // Z-dir depth
           segments={300} // Number of particles
